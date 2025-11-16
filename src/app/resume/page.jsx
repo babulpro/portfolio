@@ -50,7 +50,7 @@ export default function Resume() {
           </button>
         </div>
 
-        {/* Instructions */}
+        Instructions
         <div className="print:hidden mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
           <h4 className="font-semibold text-blue-800 mb-2">How to Save as PDF:</h4>
           <p className="text-blue-700 text-sm">
@@ -142,7 +142,7 @@ export default function Resume() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 text-lg mb-1 print:text-base">Task Manager App</h4>
-                    <p className="text-gray-600 text-base mb-2 print:text-sm print:mb-1">React • Node.js • Socket.io • MongoDB</p>
+                    <p className="text-gray-600 text-base mb-2 print:text-sm print:mb-1">React • Node.js • Docker • Nginx  • MongoDB</p>
                     <p className="text-gray-700 text-base print:text-sm">
                       Real-time collaborative task management platform.
                     </p>
@@ -217,7 +217,7 @@ export default function Resume() {
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-gray-600">🔗</span>
-                    <span className="text-gray-700">github.com/babulPro</span>
+                    <span className="text-gray-700">github.com/babulpro</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-blue-500">🔗</span>

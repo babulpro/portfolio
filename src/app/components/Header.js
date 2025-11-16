@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, Code2, Sparkles } from 'lucide-react'
+import { Menu, X, Code2 } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Header() {
@@ -51,7 +51,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
@@ -80,10 +80,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <motion.div 
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
+          <div 
             className="md:hidden mt-4 pb-4 border-t border-emerald-100 pt-4"
           >
             <nav className="flex flex-col space-y-2">
@@ -102,7 +99,7 @@ export default function Header() {
                 </Link>
               ))}
             </nav>
-          </motion.div>
+          </div>
         )}
       </div>
     </header>

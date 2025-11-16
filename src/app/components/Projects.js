@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ExternalLink, Github, Star, Eye, Sparkles, Zap } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Projects() {
   const projects = [
@@ -9,7 +10,7 @@ export default function Projects() {
       title: "E-Commerce Shopping Platform",
       description: "Full-featured e-commerce platform with product listings, shopping cart, and payment integration",
       tech: ["Next.js", "MongoDB", "Mongoose", "Tailwind"],
-      github: "#",
+      github: "https://github.com/babulpro",
       live: "https://chic-tartufo-f9dd14.netlify.app/",
       image: "/project1.jpg",
       featured: false
@@ -18,7 +19,7 @@ export default function Projects() {
       title: "Task Management App",
       description: "Collaborative task management with real-time updates and team features",
       tech: ["NextJs", "Prisma", "MongoDB","CI/CD","GitHub Actions","Docker"],
-      github: "#",
+      github: "https://github.com/babulpro/nextJsDockerTemplate",
       live: "https://house-rent-gamma.vercel.app/",
       image: "/project9.jpg",
       featured: true
@@ -26,17 +27,17 @@ export default function Projects() {
     {
       title: "Blog CMS",
       description: "Content management system with markdown support and SEO optimization",
-      tech: ["Next.js", "Prisma", "MySQL", "Auth.js"],
-      github: "#",
-      live: "#",
-      image: "/project2.jpg",
+      tech: ["Next.js", "Prisma", "MongoDb", "Auth.js"],
+      github: "https://github.com/babulpro/",
+      live: "https://routine-brown.vercel.app",
+      image: "/routine.jpg",
       featured: true
     },
     {
       title: "Distance learning Platform",
       description: "Interactive online learning platform with video lectures and quizzes",
       tech: ["Next.js", "API Integration", "Chart.js"],
-      github: "#",
+      github: "https://github.com/babulpro",
       live: "https://distancelearning.vercel.app",
       image: "/project4.jpg",
       featured: false
@@ -45,8 +46,8 @@ export default function Projects() {
       title: "Portfolio Website",
       description: "Modern portfolio website with smooth animations and responsive design",
       tech: ["Next.js", "Framer Motion", "Tailwind", "Vercel"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/babulpro/portfolio",
+      live: "https://babuls-portfolio.vercel.app/",
       image: "/project6.jpg",
       featured: true
     },
@@ -54,7 +55,7 @@ export default function Projects() {
       title: "Tesla Car Marketplace",
       description: "A marketplace for buying and selling Tesla cars with user authentication",
       tech: ["MERN Stack", "Tailwind css", ],
-      github: "https://rococo-croissant-497f22.netlify.app",
+      github: "https://github.com/babulpro",
       live: "https://rococo-croissant-497f22.netlify.app",
       image: "/project5.jpg",
       featured: false
@@ -152,7 +153,7 @@ export default function Projects() {
                     
                     <div className="flex space-x-4">
                       <motion.a
-                        href={project.github}
+                        href={project.github} target='_blank'
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-all duration-200 font-medium"
@@ -161,7 +162,7 @@ export default function Projects() {
                         Code
                       </motion.a>
                       <motion.a
-                        href={project.live}
+                        href={project.live} target='_blank'
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-lg hover:from-emerald-600 hover:to-teal-700 transition-all duration-200 font-medium shadow-lg shadow-emerald-500/25"
@@ -232,18 +233,18 @@ export default function Projects() {
                     </div>
                     
                     <div className="flex space-x-3">
-                      <a
-                        href={project.github}
+                      <Link
+                        href={project.github} target='_blank'
                         className="text-gray-600 hover:text-emerald-600 transition-colors duration-200"
                       >
                         <Github size={18} />
-                      </a>
-                      <a
-                        href={project.live}
+                      </Link>
+                      <Link
+                        href={project.live} target='_blank'
                         className="text-gray-600 hover:text-emerald-600 transition-colors duration-200"
                       >
                         <ExternalLink size={18} />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </motion.div>
