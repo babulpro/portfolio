@@ -105,7 +105,7 @@ export default function Hero() {
                 {/* Main image container */}
                 <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                   <img 
-                    src="/profile.jpg" 
+                    src="/port.png" 
                     alt="Md Babul Hossain - MERN & Next.js Developer"
                     className="w-full h-full object-cover"
                     onError={(e) => {

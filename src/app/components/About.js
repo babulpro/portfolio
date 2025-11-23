@@ -14,7 +14,7 @@ export default function About() {
   const skills = [
     { name: 'Frontend', tech: 'React, Next.js, TypeScript', icon: Code2, level: 75 },
     { name: 'Backend', tech: 'Node.js, Express, MongoDB', icon: Server, level: 80 },
-    { name: 'DevOps', tech: 'Docker, AWS, CI/CD', icon: Cloud, level: 40 },
+    { name: 'DevOps', tech: 'Docker, AWS, CI/CD', icon: Cloud, level: 30 },
     { name: 'Database', tech: 'MongoDB, MySQL, Redis', icon: Database, level: 70 },
   ]
 

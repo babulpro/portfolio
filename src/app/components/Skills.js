@@ -10,7 +10,7 @@ export default function Skills() {
       icon: Code2,
       skills: [
         { name: 'Next.js', level: 80 },
-        { name: 'React.js', level: 85 },
+        { name: 'React.js', level: 80 },
         { name: 'JavaScript (ES6+)', level: 86 },
         { name: 'Tailwind CSS', level: 75 },
         { name: 'HTML/CSS', level: 78 },
@@ -25,8 +25,7 @@ export default function Skills() {
         { name: 'NextJs', level: 80 },
         { name: 'Express.js', level: 75 },
         { name: 'REST APIs', level: 80 },
-        { name: 'Authentication', level: 75 },
-        { name: 'Middleware', level: 70 },
+        { name: 'Authentication', level: 70 }, 
       ],
       color: 'from-cyan-500 to-blue-600'
     },
@@ -51,8 +50,8 @@ export default function Skills() {
         { name: 'CI/CD', level: 70 },
         { name: 'Git & GitHub', level: 80 },
         { name: 'GitHub Actions', level: 65 },
-        { name: 'Linux', level: 50 },
-        { name: 'K8s', level: 15 },
+        { name: 'Linux', level: 40 },
+        { name: 'K8s', level: 12 },
       ],
       color: 'from-teal-500 to-cyan-600'
     }
@@ -62,7 +61,8 @@ export default function Skills() {
     { name: 'Next.js', level: 90 },
     { name: 'React', level: 80 },
     { name: 'Node.js', level: 75 },
-    { name: 'MongoDB', level: 70 },
+    { name: 'MongoDB', level: 60 },
+    { name: 'MySql', level: 70 },
     { name: 'Tailwind', level: 80 },
     { name: 'Docker', level: 80 },
   ]
